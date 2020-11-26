@@ -653,14 +653,6 @@ window.indexData = {
             text: 'Web Wallet',
             link: 'https://wallet.shiftnrg.org'
           },
-          {
-            text: 'Interactive Demo',
-            link: 'https://demo.shiftproject.com'
-          },
-          {
-            text: 'Testnet Faucet',
-            link: 'https://faucet.testnet.shiftproject.com'
-          }
         ]
       },
       {
@@ -677,18 +669,8 @@ window.indexData = {
           {
             text: 'White Paper',
             link:
-              'https://www.shiftproject.com/download/shift-introductory-paper.pdf'
+              'https://pdfhost.io/v/WUg~hSshl_Shift_NRG_Project_White_Paper.pdf'
           },
-          {
-            text: 'Chinese Paper',
-            link:
-              'https://www.shiftproject.com/download/shift-%E5%85%A5%E9%97%A8%E7%99%BD%E7%9A%AE%E4%B9%A6.pdf'
-          },
-          {
-            text: 'Korean Paper',
-            link:
-              'https://www.shiftproject.com/download/shift-%EC%86%8C%EA%B0%9C%20%EB%B0%B1%EC%84%9C.pdf'
-          }
         ]
       },
       {
@@ -712,7 +694,7 @@ window.indexData = {
           },
           {
             text: 'Reddit',
-            link: 'https://old.reddit.com/r/ShiftProject'
+            link: 'https://reddit.com/r/ShiftProject'
           }
         ]
       },
@@ -738,8 +720,8 @@ window.indexData = {
         ],
         links: [
           {
-            text: 'Livecoin (BTC/ETH/USD)',
-            link: 'https://www.livecoin.net/en/trading/SHIFT_BTC'
+            text: 'Bilaxy (USDT)',
+            link: 'https://bilaxy.com/trade/SHIFT_USDT'
           },
           {
             text: 'Altilly (BTC/ETH/XQR)',
@@ -750,7 +732,7 @@ window.indexData = {
     ],
     bottomItems: [
       {
-        text: '© Shift 2019 - All rights reserved'
+        text: '© Shift 2021 - All Rights Reserved'
       }
     ]
   },
@@ -766,4 +748,8 @@ window.indexData = {
       Facebook: 'https://www.facebook.com/ShiftNrg'
     }
   }
+  
+  {
+  
+}
 }
