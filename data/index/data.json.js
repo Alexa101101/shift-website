@@ -1,13 +1,132 @@
 window.indexData = {
+  //option1
+  {
+    "name": "adigital/cookie-consent-banner",
+    "description": "Add a configurable cookie consent banner to the website.",
+    "type": "craft-plugin",
+    "version": "1.2.7",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "cookie consent banner"
+    ],
+    "support": {
+        "docs": "https://github.com/a-digital/cookie-consent-banner/blob/master/README.md",
+        "issues": "https://github.com/a-digital/cookie-consent-banner/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark @ A Digital",
+            "homepage": "https://adigital.agency"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "adigital\\cookieconsentbanner\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Cookie Consent Banner",
+        "handle": "cookie-consent-banner",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://github.com/a-digital/cookie-consent-banner/blob/master/CHANGELOG.md",
+        "class": "adigital\\cookieconsentbanner\\CookieConsentBanner"
+    }
+}
+
+OR
+//option2 
+yarn add vue-cookieconsent-component
+<template>
+  <CookieConsent
+    message="We use Cookies for user analysis and on-page improvements!"
+    link-label="Learn about cookies"
+  />
+</template>
+<script>
+  import CookieConsent from 'vue-cookieconsent-component/src/components/CookieConsent.vue'
+
+  export default {
+    components: {
+      CookieConsent
+    }
+  }
+</script>
+<style>
+  .cookie-consent {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  .cookie-consent button {
+    border: 1px solid white;
+    padding: 10px;
+    margin-left: 20px;
+    min-width: 140px;
+  }
+</style>
+
+//end cookie consent banner edits 
+//begin menu edit 
+  (
+    header: {
+    headerItems: [
+      {
+        title: 'Menu',
+        links:  [
+          {
+            text: 'WHAT: Lock n"'" Load Technology',
+            link: 'https://shiftnrg.org/#LockNLoad'
+          },
+            text: 'HOW: A Better Platform',
+            link: 'https://shiftnrg.org/#Phoenix'
+          },
+          {
+            text: 'WHEN: Roadmap',
+            link: 'https://shiftnrg.org/#Roadmap'
+          },
+   {
+            text: 'WHO: Team',
+            link: 'https://shiftnrg.org/#Team'
+          },
+          {
+            text: 'STAY WITH US: News, Updates, and Announcements',
+            link: 'https://shiftnrg.org/#News'
+          },
+          {
+            text: 'CODE: GitHub',
+            link: 'https://github.com/shiftnrg'
+          },
+          {
+            text: 'EXPLORE: Explorer',
+            link: 'https://explorer.shiftnrg.org'
+          },
+          {
+            text: 'WALLET: Web Wallet',
+            link: 'https://wallet.shiftnrg.org'
+          },
+        ]
+      },
   banner: {
     newsFlash: {
       badge: 'Update',
       description:
-        'Development Update: Core Migration to Polkadot/Substrate by the Shift Team',
-      link: '/#news'
+        'Development Update 2020.12.03: We have given the green light for MonteLabs to audit our wSHIFT smart contract',
+      link: 'https://github.com/ShiftNrg/wrappedShift'
     },
-    line1: 'Reinvented Decentralized',
-    line2: 'Cloud Hosting',
+    line1: 'Reinvented Decentralized Cloud Hosting',
+  
     line3:
       'Shift combines the transparency, immutability and decentralization of blockchain with distributed hosting'
   },
@@ -316,7 +435,44 @@ window.indexData = {
     description:
       'Shift has entered a new development phase that focuses on the storage validation protocols that form the foundation of the compensation system that will reward node operators.',
     items: [
-      {
+     {
+        label: 'January 2021',
+        percentage: '75',
+        title: 'wrapped SHIFT',
+        items: [
+          { item: 'wSHIFT coded', class: 'checked' },
+          { item: 'submitted for audit', class: 'checked' },
+          { item: 'audit complete' },
+          { item: 'integration' }
+        ]
+      },
+  
+   {
+        label: 'March 2021',
+        percentage: '50',
+        title: 'Substrate Migration',
+        items: [
+          { item: 'Substrate', class: 'checked' },
+          { item: 'NPoS', class: 'checked' },
+          { item: 'Account conversion' },
+          { item: 'Node installer' }
+        ]
+      },
+  
+   {
+        label: 'May 2021',
+        percentage: '50',
+        title: 'Phoenix Integration',
+        items: [
+          { item: 'Phoenix-Substrate Fusion' },
+          { item: 'Demo Launch' },
+          { item: 'Creativity Contests' }
+        ]
+      },
+  
+  
+  
+  {
         label: 'TBD',
         percentage: '50',
         title: 'Core Migration',
@@ -351,7 +507,7 @@ window.indexData = {
       },
       {
         label: 'TBD',
-        percentage: '2',
+        percentage: '25',
         title: 'Proof-of-Capacity',
         items: [
           { item: 'Storage provider registration' },
@@ -362,7 +518,7 @@ window.indexData = {
       },
       {
         label: 'TBD',
-        percentage: '1',
+        percentage: '25',
         title: 'Proof-of-Storage',
         items: [
           { item: 'Distributed Hash Table (DHT)' },
@@ -373,7 +529,7 @@ window.indexData = {
       },
       {
         label: 'TBD',
-        percentage: '1',
+        percentage: '5',
         title: 'Incentive Model',
         items: [
           { item: 'Dynamic transaction fees' },
@@ -384,12 +540,91 @@ window.indexData = {
       }
     ]
   },
+  
+  
+  Team: {
+    title: 'Team members',
+    subtitle: 'Milestones to production',
+    description:
+      'Shift has revamped its team to include 2 world-class developers who lead the project with the help of a dedicated and strong community of willing and able probem-solvers.',
+    items: [
+     {
+        label: 'Matt Swezey ',
+        percentage: '100',
+        title: 'Software Engineer',
+        items: [
+          { item: '> 1000 GitHub Contributions this year', class: 'checked' },
+          { item: '> 10 years experience', class: 'checked' },
+  ]
+  }
+  
+  
+       {
+        label: 'Richard Merrill ',
+        percentage: '100',
+        title: 'Software Engineer',
+        items: [
+          { item: 'Experienced coder in multiple languages', class: 'checked' },
+          { item: '> 10 years experience', class: 'checked' },
+  ]
+  }
+  
+  
+  
+  
+  
+  
   news: {
     label: 'updates',
     title: 'Latest Updates and News',
     readMore: 'Read more',
     readMoreInsights: 'Read more insights from Shift',
     items: [
+      
+      {
+        id: 9,
+        datetime: '2020-12-12',
+        day: '12',
+        month: 'dec',
+        category: 'announcement',
+        title: 'Upcoming MainNet Update',
+        intro:
+        'Tentative mainnet update go live: Jan 5th, 2021 11 AM CST',
+        content:  '
+          <p>Dear Community,</p>
+          <p> Tentative mainnet update go live date and time: Jan 5th, 2021 11 AM CST
+          </p> Update status will be released 14 days before (December 22nd 2020).
+          </p> 
+          Sincerely,<br/><br/>
+          The Shift Team
+          </p>
+         
+      },
+
+            {
+        id: 8,
+        datetime: '2020-12-03',
+        day: '03',
+        month: 'dec',
+        category: 'announcement',
+        title: 'wSHIFT Audit Submitted',
+        intro:
+          'In our latest  newsletter we announced that the Shift blockchain will be migrating from the current Lisk codebase to a new core built on a modular framework. This transition is designed to allow us to conduct our own development on the blockchain, while the task of networking, consensus and interoperability maintenance is managed by the developers of the framework. Once migrated, we will thus be able to focus solely on Phoenix and our custom blockchain modules, increasing the speed of the project’s development significantly. After conducting weeks of research on the various modular cores currently available, we can now reveal the selection we have made and believe perfectly meets the needs of our visionary Shift Core. We are happy to announce that we will be migrating to the Polkadot/Substrate codebase. In the interim, to assist with SHIFT"'"s liquidity on the open market, we have created wSHIFT a wrapped SHIFT token running on the Ethereum blockchain which will begin trsing shortly.',
+        content:
+          <p>Dear Community,</p>
+          <p> In order to migrate successfully to wSHIFT from SHIFT, our mainnet must undergo an update to allow the burning of SHIFT coin.
+          </p> This update will occur no sooner than 30 days of this announcement. 
+          </p> Official day, estimated time, and block height to be announcement soon. 
+          </p> 
+          Sincerely,<br/><br/>
+          The Shift Team
+          </p>
+         
+      },
+      
+      
+      
+      
       {
         id: 7,
         datetime: '2019-11-28',
