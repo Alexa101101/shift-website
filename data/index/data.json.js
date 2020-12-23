@@ -750,11 +750,6 @@ window.indexData = {
           {
             text: 'Web Wallet',
             link: 'https://wallet.shiftnrg.org'
-          },
-          {
-            text: 'Code of Conduct',
-            link:
-              'https://docs.google.com/document/d/e/2PACX-1vRrPJ6uQbjEwpPLs0Tg3XiVL1Xbj6C1_CBCndE1Q4D0r2LsUalhL6kxodFYsSZmCPjfSh8ZV1Jb0dMq/pub'
           }
         ]
       },
@@ -772,17 +767,7 @@ window.indexData = {
           {
             text: 'White Paper',
             link:
-              'https://www.shiftnrg.org/downloads/english-shift-whitepaper.pdf'
-          },
-          {
-            text: 'Chinese Paper',
-            link:
-              'https://www.shiftnrg.org/downloads/chinese-shift-whitepaper.pdf'
-          },
-          {
-            text: 'Korean Paper',
-            link:
-              'https://www.shiftnrg.org/downloads/korean-shift-whitepaper.pdf'
+              'https://pdfhost.io/v/WUg~hSshl_Shift_NRG_Project_White_Paper.pdf'
           }
         ]
       },
@@ -832,6 +817,10 @@ window.indexData = {
           }
         ],
         links: [
+          {
+            text: 'Bilaxy (USDT)',
+            link: 'https://bilaxy.com/trade/SHIFT_USDT'
+          },
           {
             text: 'Altilly (BTC/ETH/XQR)',
             link: 'https://www.altilly.com/market/SHIFT_BTC'
